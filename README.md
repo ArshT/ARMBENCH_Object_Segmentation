@@ -22,7 +22,11 @@ Hence, install the dependencies of the above-mentioned repositories.
 
 `python train_net.py --config configs/detr_256_6_6_torchvision.yaml --num-gpus 1 MODEL.WEIGHTS converted_model.pth`
 
+
+
+
 2. Finetuning SAM
+
 `cd lightning-sam`
 
 `pip install .`

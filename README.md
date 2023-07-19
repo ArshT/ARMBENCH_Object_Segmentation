@@ -15,13 +15,14 @@ Hence, install the dependencies of the above-mentioned repositories.
 
 ### Running the Code
 1. Training a DETR Model:
-`cd /DETR/DETR/d2`
+ 
+ `cd /DETR/DETR/d2`
 
 `python converter.py --source_model https://dl.fbaipublicfiles.com/detr/detr-r50-e632da11.pth --output_model converted_model.pth`
 
 `python train_net.py --config configs/detr_256_6_6_torchvision.yaml --num-gpus 1 MODEL.WEIGHTS converted_model.pth`
 
-3. Finetuning SAM
+2. Finetuning SAM
 `cd lightning-sam`
 
 `pip install .`

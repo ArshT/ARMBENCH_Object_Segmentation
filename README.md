@@ -33,3 +33,31 @@ Hence, install the dependencies of the above-mentioned repositories.
 
 `python lightning-sam/train.py`
 
+
+
+### Results
+
+#### For Mix-Object-Tote task
+
+| Method             |  Mean AP-50  | Mean AP-75 |
+| ------------------ | ------------ | ---------- | 
+| Mask RCNN FPN with R-50 (Paper)   | 0.72 | 0.61| 
+| SAM (Finetuned 4 epochs) + DETR   | **0.86** | **0.76**| 
+
+
+#### For Same-Object-Tote task
+
+| Method             |  Mean AP-50  | Mean AP-75 |
+| ------------------ | ------------ | ---------- | 
+| Mask RCNN FPN with R-50 (Paper)   | 0.11 | 0.10 | 
+| SAM (Finetuned on Mixed-Object-Tote Dataset for 4 epochs) + DETR   | **0.24** | **0.22**| 
+
+#### For Zoomed-Out-Tote task
+
+| Method             |  Mean AP-50  | Mean AP-75 |
+| ------------------ | ------------ | ---------- | 
+| Mask RCNN FPN with R-50 (Paper)   | **0.25** | **0.19** | 
+| SAM (Finetuned on Mixed-Object-Tote Dataset for 4 epochs) + DETR   | 0.12 | 0.08| 
+
+
+

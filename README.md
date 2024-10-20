@@ -61,3 +61,9 @@ Hence, install the dependencies of the above-mentioned repositories.
 
 
 
+### Qualitative Results
+
+<p align="center">
+  <img src="assets/ARMBench_Image.jpg" alt="Image 1" width="400"/>
+  <img src="assets/ARMBench_Object_Segmentation.jpg" alt="Image 2" width="400"/>
+</p>
